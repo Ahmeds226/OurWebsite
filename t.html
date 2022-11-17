@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== FAVICON ====================-->
+    <link rel="icon" href="assets/img/thumbnail.jpg" />
+
+    <!--========== BOX ICONS LIBRARY ==========-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./t.css" />
+
+    <!--========== Title ==========-->
+    <title>K&M Food Services</title>
+
+    <!--================== LINK THUMBNAIL META TAGS ===================-->
+    <!-- MS Tile - for Microsoft apps-->
+    <meta
+      name="msapplication-TileImage"
+      content="https://raw.githubusercontent.com/Thiagoow/UberEats-Responsive-LandingPage/master/assets/img/ThumbnailLinkImg.jpg"
+    />
+
+    <!-- fb & Whatsapp -->
+    <meta property="og:site_name" content="Uber Eats" />
+    <meta property="og:title" content="🥗 Delivery de comida | Uber Eats" />
+    <meta
+      property="og:description"
+      content="Restaurantes e mercados próximos de você! "
+    />
+    <!-- IMG URL: -->
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Thiagoow/UberEats-Responsive-LandingPage/master/assets/img/ThumbnailLinkImg.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <!--  size up to 300px. Anything above this will not work in WhatsApp -->
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:url" content="https://eats-uber.netlify.app" />
+  </head>
+  <body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrollTop show-scroll" id="scroll-top">
+      <i class="bx bx-chevron-up scrollTop_icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="/" class="nav_logo">
+          <b>
+            K&M
+            <span>Food Services</span>
+          </b>
+        </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="./index.html" class="nav_link">Home</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+          <!--When clicked activate the class "opened"
+          to the button tag as well to the 4 SVG lines-->
+          <button
+            class="menu"
+            aria-label="Abrir Menu"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          >
+            <svg width="40" height="41" viewBox="0 0 100 100">
+              <path
+                class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+              />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path
+                class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!-- Form Section -->
+      <section class="forms-section" id="login">
+        <h1 class="section-title">Login or Join Our Community</h1>
+        <div class="forms">
+          <div class="form-wrapper is-active">
+            <button type="button" class="switcher switcher-login">
+              Login
+              <span class="underline"></span>
+            </button>
+            <form class="form form-login">
+              <fieldset>
+                <legend>
+                  Please, enter your email and password for login.
+                </legend>
+                <div class="input-block">
+                  <label for="login-email">E-mail</label>
+                  <input id="login-email" type="email" required />
+                </div>
+                <div class="input-block">
+                  <label for="login-password">Password</label>
+                  <input id="login-password" type="password" required />
+                </div>
+              </fieldset>
+              <button type="submit" class="btn-login">Login</button>
+            </form>
+          </div>
+          <div class="form-wrapper">
+            <button type="button" class="switcher switcher-signup">
+              Sign Up
+              <span class="underline"></span>
+            </button>
+            <form class="form form-signup">
+              <fieldset>
+                <legend>
+                  Please, enter your email, password and password confirmation
+                  for sign up.
+                </legend>
+                <div class="input-block">
+                  <label for="signup-email">E-mail</label>
+                  <input id="signup-email" type="email" required />
+                </div>
+                <div class="input-block">
+                  <label for="signup-password">Password</label>
+                  <input id="signup-password" type="password" required />
+                </div>
+                <div class="input-block">
+                  <label for="signup-password-confirm">Confirm password</label>
+                  <input
+                    id="signup-password-confirm"
+                    type="password"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <button type="submit" class="btn-signup">Continue</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
