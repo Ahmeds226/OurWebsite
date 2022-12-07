@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== FAVICON ====================-->
+    <link rel="icon" href="assets/img/thumbnail.jpg" />
+
+    <!--========== BOX ICONS LIBRARY ==========-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="./t2.css">
+
+    <!--========== Title ==========-->
+    <title>K&M Login Page</title>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="./index.html" class="nav_logo">
+          <b>
+            K&M
+            <span>Food Services</span>
+          </b>
+        </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="./index.html" class="nav_link">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <body>
+      <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true" />
+
+        <div class="signup">
+          <form>
+            <label for="chk" aria-hidden="true">Sign up</label>
+            <input type="text" name="txt" placeholder="User name" required="" />
+            <input type="email" name="email" placeholder="Email" required="" />
+            <input
+              type="password"
+              name="pswd"
+              placeholder="Password"
+              required=""
+            />
+            <button>Sign up</button>
+          </form>
+        </div>
+
+        <div class="login">
+          <form>
+            <label for="chk" aria-hidden="true">Login</label>
+            <input type="email" name="email" placeholder="Email" required="" />
+            <input
+              type="password"
+              name="pswd"
+              placeholder="Password"
+              required=""
+            />
+            <button>Login</button>
+          </form>
+        </div>
+      </div>
+    </body>
+</html>
